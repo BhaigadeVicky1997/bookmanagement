@@ -1,0 +1,8 @@
+<p>home works!</p>
+
+<div [@openClose]="isOpen ? 'open' : 'closed'" class="open-close-container">
+    <p>The box is now {{ isOpen ? 'Open' : 'Closed' }}!</p>
+  </div>
+
+
+  <button class="btn btn-danger" (click)="toggle()">Toggle</button>

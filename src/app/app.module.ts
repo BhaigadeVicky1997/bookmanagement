@@ -1,12 +1,18 @@
 //NPM imports
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 //Local Imports
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ComponentModule } from './component.module';
+
+//local module imports
+import { LayoutModule } from './components/layout/layout.module';
 import { AuthModule } from './components/auth/auth.module';
+import { ComponentModule } from './component.module';
+import { AppRoutingModule } from './app-routing.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 @NgModule({
   declarations: [
@@ -16,7 +22,10 @@ import { AuthModule } from './components/auth/auth.module';
     BrowserModule,
     AppRoutingModule,
     ComponentModule,
-    AuthModule
+    AuthModule,
+    FormsModule,
+    LayoutModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
